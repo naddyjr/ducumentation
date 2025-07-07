@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Website</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="" >
+    <div class="progress-reader"></div>
+        <!-- Back to Top Button -->
+<button class="button" id="back-to-top">
+    <svg class="svgIcon" viewBox="0 0 384 512">
+      <path
+        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+      ></path>
+    </svg>
+  </button>
+  <div class="demos-quick-view">
+    <a class="quick-view-link quick-view-buy" target="_blank" href="https://somnest.net" aria-label="buy now">
+        <svg id="svg-buy" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0, 0, 400,400">
+            <g>
+                <path d="M304.906 15.509 C 283.300 19.268,275.831 27.762,271.422 53.585 L 269.811 63.019 176.981 63.405 C 125.925 63.617,83.387 64.081,82.453 64.436 C 80.725 65.093,79.735 73.962,81.389 73.962 C 81.738 73.962,82.455 75.915,82.983 78.302 C 83.510 80.689,84.281 83.062,84.697 83.575 C 85.112 84.089,85.226 85.097,84.950 85.816 C 84.674 86.535,84.704 86.869,85.016 86.557 C 85.327 86.245,86.508 89.482,87.639 93.750 C 90.679 105.223,92.925 112.733,93.570 113.585 C 93.885 114.000,94.571 116.208,95.094 118.491 C 95.618 120.774,96.304 122.981,96.619 123.396 C 96.934 123.811,97.797 126.698,98.538 129.811 C 99.278 132.925,100.113 135.642,100.392 135.849 C 100.671 136.057,101.122 137.890,101.394 139.924 C 101.666 141.957,102.189 143.995,102.555 144.452 C 102.922 144.909,103.469 146.472,103.771 147.925 C 106.014 158.724,115.075 168.252,124.815 170.053 C 131.231 171.239,239.306 171.245,245.702 170.060 C 252.150 168.865,260.919 162.727,262.273 158.463 C 262.532 157.648,263.020 156.981,263.359 156.981 C 263.698 156.981,264.207 156.217,264.491 155.283 C 266.121 149.922,266.681 147.552,268.011 140.377 C 268.819 136.019,269.789 130.925,270.167 129.057 C 270.545 127.189,270.874 124.212,270.898 122.443 C 270.923 120.673,271.266 118.635,271.660 117.914 C 272.054 117.194,272.922 112.528,273.590 107.547 C 274.258 102.566,275.116 97.472,275.497 96.226 C 275.878 94.981,276.713 90.906,277.353 87.170 C 277.992 83.434,279.153 76.642,279.932 72.075 C 280.710 67.509,281.700 62.415,282.131 60.755 C 282.561 59.094,283.457 54.237,284.120 49.960 C 286.617 33.874,291.267 29.358,307.547 27.210 C 317.483 25.899,319.245 24.805,319.245 19.950 C 319.245 14.160,316.875 13.426,304.906 15.509 M124.906 182.672 C 115.898 184.837,106.438 193.678,103.394 202.775 C 101.894 207.259,101.356 216.187,102.542 216.920 C 102.903 217.143,103.411 218.659,103.672 220.290 C 105.343 230.737,117.712 239.245,131.231 239.245 C 150.631 239.245,162.305 224.833,158.880 205.110 C 156.221 189.799,139.954 179.056,124.906 182.672 M234.340 182.718 C 222.116 185.470,211.883 198.326,211.872 210.943 C 211.848 239.778,249.766 250.529,265.432 226.130 C 278.906 205.143,258.887 177.192,234.340 182.718 M3.774 330.633 L 3.774 366.171 22.830 365.857 C 45.010 365.492,47.121 365.027,52.930 359.218 C 61.617 350.530,58.579 333.550,47.855 330.858 C 45.951 330.381,45.965 330.351,48.990 328.547 C 58.836 322.675,58.806 305.837,48.937 299.181 C 43.932 295.805,38.943 295.094,20.251 295.094 L 3.774 295.094 3.774 330.633 M193.962 330.539 L 193.962 366.038 199.623 366.038 L 205.283 366.038 205.283 338.682 L 205.283 311.327 209.623 318.947 C 212.009 323.138,219.396 335.444,226.038 346.293 L 238.113 366.019 245.472 366.028 L 252.830 366.038 252.830 330.566 L 252.830 295.094 247.179 295.094 L 241.528 295.094 241.330 322.453 L 241.132 349.811 238.286 344.528 C 236.721 341.623,229.393 329.396,222.003 317.358 L 208.565 295.472 201.263 295.256 L 193.962 295.040 193.962 330.539 M37.949 306.688 C 45.153 309.737,45.813 319.903,39.044 323.555 C 37.153 324.575,34.267 324.934,26.226 325.150 L 15.849 325.428 15.849 315.544 L 15.849 305.660 25.685 305.660 C 32.292 305.660,36.317 305.998,37.949 306.688 M277.535 311.717 C 253.189 317.864,251.080 356.471,274.606 365.328 C 293.198 372.327,310.733 360.806,311.561 341.047 C 312.443 320.002,297.100 306.776,277.535 311.717 M63.396 331.741 C 63.396 353.755,63.791 356.258,68.028 361.070 C 74.978 368.966,94.810 368.742,99.825 360.710 C 101.270 358.397,101.887 358.975,101.887 362.642 L 101.887 366.038 107.170 366.038 L 112.453 366.038 112.453 339.245 L 112.453 312.453 106.415 312.453 L 100.377 312.453 100.377 329.081 C 100.377 351.453,97.768 356.891,86.996 356.965 C 77.106 357.032,75.906 354.309,75.613 331.132 L 75.376 312.453 69.386 312.453 L 63.396 312.453 63.396 331.741 M113.962 312.965 C 113.962 313.484,128.386 348.735,133.207 360.000 L 135.827 366.120 133.686 370.841 C 130.133 378.678,125.474 380.727,118.868 377.358 C 114.964 375.368,115.177 375.264,113.723 379.878 C 111.997 385.353,111.967 385.265,116.178 387.077 C 126.883 391.682,137.600 387.957,142.798 377.824 C 144.521 374.464,168.302 314.085,168.302 313.069 C 168.302 312.730,165.500 312.456,162.075 312.460 L 155.849 312.468 149.506 331.140 C 146.017 341.409,142.837 350.660,142.439 351.698 C 141.772 353.435,141.572 353.166,139.920 348.302 C 138.932 345.396,135.703 336.142,132.743 327.736 L 127.362 312.453 120.662 312.453 C 116.977 312.453,113.962 312.683,113.962 312.965 M308.725 313.019 C 308.750 313.330,312.743 325.302,317.598 339.623 L 326.427 365.660 333.180 365.660 L 339.934 365.660 345.981 346.619 L 352.029 327.578 358.472 346.619 L 364.914 365.660 371.598 365.660 L 378.282 365.660 386.779 340.715 C 391.452 326.995,395.512 315.023,395.802 314.111 C 396.317 312.488,396.185 312.453,389.627 312.453 L 382.926 312.453 377.312 332.069 C 374.224 342.858,371.514 351.688,371.288 351.692 C 371.063 351.695,368.145 342.953,364.804 332.264 L 358.731 312.830 352.414 312.830 L 346.096 312.830 340.029 332.260 C 336.692 342.947,333.777 351.692,333.551 351.694 C 333.324 351.696,330.616 342.868,327.533 332.075 L 321.926 312.453 315.303 312.453 C 311.660 312.453,308.700 312.708,308.725 313.019 M293.241 323.371 C 303.979 331.561,300.778 354.235,288.512 356.866 C 274.639 359.841,265.528 343.580,272.617 328.499 C 276.152 320.979,286.675 318.363,293.241 323.371 M39.971 336.966 C 47.213 340.711,47.213 350.609,39.971 354.355 C 38.354 355.191,35.049 355.472,26.830 355.472 L 15.849 355.472 15.849 345.660 L 15.849 335.849 26.830 335.849 C 35.049 335.849,38.354 336.130,39.971 336.966 " stroke="none" fill="currentColor" fill-rule="evenodd"></path>
+            </g>
+        </svg>
+    </a>
+</div>
+    <header>
+        <!-- Menu Icon (Mobile Only) -->
+        <div class="menu-icon" id="menu-icon">
+            <label class="hamburger">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </div>
+        <!-- Logo -->
+        <div class="logo">
+            <h1 class="logo-text">
+                <a href="" title="somnest"><span class="red-s">S</span>omnest</a>
+            </h1>
+        </div>
+    
+        <!-- Navigation -->
+        <nav class="nav-container" id="nav-container">
+            <div class="radio-inputs">
+                <label class="radio" data-section="home">
+                    <input type="radio" name="radio" id="about" />
+                    <span class="name">Home</span>
+                </label>
+                <label class="radio" data-section="doc">
+                    <input type="radio" name="radio" id="doc" />
+                    <span class="name">Documentation</span>
+                </label>
+                <label class="radio" data-section="doc/changelog">
+                    <input type="radio" name="radio" id="changelogs" />
+                    <span class="name">Change Logs</span>
+                </label>
+            </div>
+        </nav>
+    
+        <!-- Theme Toggle -->
+        <!-- From Uiverse.io by JkHuger --> 
+<label for="theme" class="theme">
+	<span class="theme__toggle-wrap">
+		<input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
+		<span class="theme__fill"></span>
+		<span class="theme__icon">
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+		</span>
+	</span>
+</label>
+    </header>
+
+    <main>
+        <section id="home" class="content">
+            <h1>Welcome to the Documentation Website</h1>
+            <p>This is the home page of your documentation website.</p>
+            <p>we are building documentation page and change log.</p>
+        </section>
+
+        <section id="doc" class="content" style="display: none;">
+            <div class="doc-container">
+                <!-- Sidebar -->
+                <aside class="doc-sidebar">
+                    <ul class="doc-tabs">
+                        <li class="doc-tab active" data-tab="getting-started">
+                            <a href="/getting-started">Getting Started</a>
+                        </li>
+                        <li class="doc-tab" data-tab="quick-start">
+                            <a href="/quick-start">Quick Start</a>
+                        </li>
+                        <li class="doc-tab has-dropdown" data-tab="advanced-usage">
+                            <a href="/advanced-usage">Advanced Usage</a>
+                            <span class="dropdown-icon">+</span>
+                            <ul class="dropdown-content">
+                                <li><a href="/article-1">Article 1</a></li>
+                                <li><a href="/article-2">Article 2</a></li>
+                                <li><a href="/article-3">Article 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="doc-tab" data-tab="changelog">
+                            <a href="/changelog">Change Logs</a>
+                        </li>
+                    </ul>
+                </aside>
+        
+                <!-- Main Content -->
+                <main class="doc-main">
+                    <!-- Breadcrumbs -->
+                    <div class="breadcrumbs">
+                        <a href="">Home</a> / <a href="/doc">Documentation</a> / <span>Getting Started</span>
+                    </div>
+        
+                    <!-- Content -->
+                    <div class="doc-content" id="getting-started">
+                        <h1>Getting Started</h1>
+                        <p>Welcome to the documentation for our plugin. Follow these steps to get started:</p>
+                        <section class="section" id="mm-introduction">
+                            <h3><b>Introduction to Somnest mobile api</b></h3>
+                            <hr>
+                            <p>Somnest mobile api app is a smart Flutter news app. It contains Flutter source code and to build your news
+                               application with most useful features and eye-catching outlook. If you are planning to deploy your news
+                               app project for android and ios users, then it’s your perfect match to have on your hand. The product
+                               comes with current weather update, breaking news tab, topics to filter, push notification as well as RTL
+                               support. You can customise a bit and decide what to show or not into the app real-time.
+                            </p>
+                            <div class="content">
+                               <p><b>Somnest mobile api - App Intro Video</b></p>
+                               <iframe width="80%" height="526" src="https://www.youtube.com/embed/JI_cEZYVuEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                   
+                   
+                            <h3><b><u>Must Follow this</u></b></h3>
+                            <div class="danger">
+                               <ul>
+                                  <li>
+                                     <i class="fa fa-exclamation-triangle dangerText"></i><b class="dangerText">Danger</b>
+                                  </li>
+                                  <h3>Before running the app, you must follow the below steps, or else the app will not work.</h3>
+                                  <h5>1 Setup Firebase</h5>
+                                  <li>For Firebase setup, you just need to change the <b>Google json</b> file.</li>
+                                  <ul>
+                                     <li>1 - Create a new firebase account, register your application with your package
+                                        name.
+                                     </li>
+                                     <li>2 - Now download the <b>google-services.json</b> file for android and
+                                        <b>GoogleService-Info.plist</b> for ios replace with current.
+                                     </li>
+                                     <li>3 - Refer for android <a href="https://firebase.google.com/docs/android/setup" target="_blank">Link</a> and for ios <a href="https://firebase.google.com/docs/ios/setup" target="_blank">Link</a>
+                                     </li>
+                                  </ul>
+                               </ul>
+                               <h5>2 Change Base URL</h5>
+                               <li style="list-style: disc;">Change Base URL inside <b>lib/utils/Constants.dart</b> <i>mBaseUrl</i>
+                                  variable
+                               </li>
+                               <h5>3 Weather API</h5>
+                               <li style="list-style-type: disc;">Configure whether detail <a href="https://meetmighty.com/codecanyon/document/mightynews/index.html#mm-config-flutter">click
+                                     here</a>
+                               </li>
+                               <li style="list-style: disc;">Add weather API key inside <b>lib/utils/Constants.dart</b>
+                                  <i>mWeatherAPIKey</i> variable
+                               </li>
+                               <h5>4 OneSignal App ID</h5>
+                               <li style="list-style-type: disc;">Configure OneSignal detail <a href="https://meetmighty.com/codecanyon/document/mightynews/index.html#mm-config-flutter">click
+                                     here</a>
+                               </li>
+                               <li style="list-style: disc;">Add OneSignal key inside <b>lib/utils/Constants.dart</b>
+                                  <i>mOneSignalAPPKey</i> variable
+                               </li>
+                               <h5>5 Twitter API</h5>
+                               <li style="list-style: disc;">Configure Twitter detail <a href="https://meetmighty.com/codecanyon/document/mightynews/index.html#mm-config-flutter">click
+                                     here</a>
+                               </li>
+                               <li style="list-style: disc;">Add Twitter API key inside <b>lib/utils/Constants.dart</b></li>
+                               <h5>6 AdMob API</h5>
+                               <li style="list-style: disc;">Configure AdMob detail <a href="https://meetmighty.com/codecanyon/document/mightynews/index.html#mm-config-flutter">click
+                                     here</a>
+                               </li>
+                               <li style="list-style: disc;">Add Twitter API key inside <b>lib/utils/Constants.dart</b></li>
+                               <h5>7 Change App Configuration</h5>
+                               <li style="list-style-type: disc;">Change App features <a href="https://meetmighty.com/codecanyon/document/mightynews/index.html#mm-config-wordpress">click
+                                     here</a> and goto <b>App Configuration</b> section
+                               </li>
+                               <li style="list-style-type: disc;">Enable/Disable app features like weather, Admob, etc.</li>
+                            </div>
+                         </section>
+                    </div>
+                    
+                    <div class="doc-content" id="quick-start" style="display: none;">
+                        <h1>Quick Start</h1>
+                        <p>Here’s a quick guide to start using the plugin:</p>
+                        <pre><code>npm install my-plugin</code></pre>
+                        <ul><li>Now available for Shop, Membership, and Courses</li><li>Easily make payments for LMS courses via PayPal</li></ul>
+                        <h3>Version 9.0.4 – 21 Dec 2024</h3>
+                        <pre><code>import MyPlugin from 'my-plugin';</code></pre>
+                    </div>
+                    <div class="doc-content" id="advanced-usage" style="display: none;">
+                        <h1>Advanced Usage</h1>
+                        <p>Learn about advanced features and customization options:</p>
+                        <ul>
+                            <li>Custom configurations.</li>
+                            <li>Extending the plugin.</li>
+                            <li>API reference.</li>
+                        </ul>
+                    </div>
+        
+                    <!-- Articles -->
+                    <div class="doc-content" id="article-1" style="display: none;">
+                        <h1>Article 1</h1>
+                        <p>This is the content for Article 1.</p>
+                        <h1>important 1</h1>
+                        <p>This is the content for Article 1.</p>
+                    </div>
+                    <div class="doc-content" id="article-2" style="display: none;">
+                        <h1>Article 2</h1>
+                        <p>This is the content for Article 2.</p>
+                    </div>
+                    <div class="doc-content" id="article-3" style="display: none;">
+                        <h1>Article 3</h1>
+                        <p>This is the content for Article 3.</p>
+                    </div>
+                    <div class="doc-content" id="changelog" style="display: none;">
+                        <h1>Quick Start</h1>
+                        <p>Here’s a quick guide to start using the plugin:</p>
+                        <pre><code>npm install my-plugin</code></pre>
+                        <ul><li>Now available for Shop, Membership, and Courses</li><li>Easily make payments for LMS courses via PayPal</li></ul>
+                        <h3>Version 9.0.4 – 21 Dec 2024</h3>
+                        Version 9.1.0 – 04 Feb 2025
+New
+
+Now available for Shop, Membership, and Courses
+Easily make payments for LMS courses via PayPal
+Update
+
+Revamped UI for Stories & Highlight Stories
+Enhanced UI for the Cart Screen for a smoother checkout experience
+Fixed
+
+Post Comments
+Chat Wallpaper Flow
+Validation for Corrupt Media Files
+Coupon Expiry validation
+Topic Reply Flow
+Invite Users Layout for Group Creation
+URL support for Stories
+Other small bug fixes
+Note: Plugin update is required
+
+Version 9.0.4 – 21 Dec 2024
+New
+
+A cancel option has been added to the order screen
+Fixed
+
+Issue with the course order screen sales price has been resolved
+Include a suggested user list in the Search member component
+The highlight story screen is managed by flow to the my story screen
+The flow set for the album upload module
+Manage the blocked account list 
+The profile edit screen displays the option to disable the profile
+Control the back flow of the user story screen
+Other minor bug fixes
+Note: Plugin update is required
+
+Version 9.0.3 – 25 Nov 2024
+New
+
+Added validations in edit billing address
+Update
+
+Will pop scope migration
+Added support for JDK 21
+Fixed
+
+Shop filter issue
+Post comment edit reply issue
+Duplicate categories
+Course order price issue
+Duplicate stories issue
+Mute and Un-mute button issues on the chat module
+Notification count issue
+Image issue in the chat screen
+Duplicate story issue
+Other small bug fixes
+Version 9.0.0 – 08 Nov 2024 (Breaking Changes)
+Update
+
+Improved overall app performance for a smoother user experience
+Enhanced MobX state management implementation for better stability and efficiency
+Updated Activity UI for a more polished look and feel
+Gamipress rewards are now dynamically managed for a more flexible and engaging experience
+Fixed
+
+Resolved an issue preventing iOS app archive builds
+Fixed an issue where story time displayed incorrectly based on the timer
+Corrected an issue displaying inaccurate membership order details for free plans
+Fixed an issue where theme mode reverted when restarting the app
+Resolved an issue with social login that caused a continuous loading screen
+Adjusted spacing to improve RTL language support
+Fixed a type casting error that appeared for courses
+Resolved a profile field issue occurring while editing profiles
+Addressed other minor issues to improve app’s user interface, stability and performance
+Important Notes
+Backup: This update introduces major changes. Please ensure a backup of your existing data to prevent any loss.
+Plugin update required
+Version 8.0.2 – 25 Oct 2024 ( App Update ) 
+Update
+
+Update – Flutter 3.24.X Support
+Update: Android Studio Latest Version (LadyBug) Support
+Version 8.0.2 – 22 Oct 2024 ( Plugin Update ) 
+Update
+
+Updated outdated WooCommerce templates.
+Update – Compatible with BuddyPress latest version
+Fixed
+
+Fix – Escaption issue resolved
+Fix – Minor bugs
+Note: Only Plugin update is required
+
+Version 8.0.1 – 04 Sep 2024
+Update
+
+Migrated Firebase Messaging from legacy FCM APIs to HTTP v1
+Firebase Messaging migration steps are mentioned here – Enable Firebase Notification
+
+Note: Only Plugin update is required
+
+Version 8.0.0 – 11 July 2024
+New
+
+In-app purchases (IAPs) – Users can now buy subscriptions within the app
+Update
+
+Migrate to Flutter 3.22.x
+Performance improvements – Conducted API response optimization and code optimization in major modules like activity, forums, groups, settings, suggestions, moderation, gallery etc
+Libraries have been updated for compatibility
+Fixed
+
+Chat issue – Addressed an issue in chat caused by the Better Messages plugin update
+Important Notes
+Backup: This update includes significant changes based on API response optimization. Please back up your existing code before updating.
+In – App Purchase Configuration – here
+We’ve added firebase_options inside lib folder.
+Kindly configure it by following the steps mentioned in Flutter configuration 
+Plugin update required
+Version 7.3.0 – 20 Mar 2024
+New
+
+Firebase Push Notification and Removed OneSignal Notification
+Update
+
+Migrate to Flutter 3.19.x
+Libraries Update
+Note: Plugin update is Required
+
+Version 7.2.1 – 08 Jan 2024
+Update
+
+Libraries updated
+Fixed
+
+Resolved issue with earned badges
+Note: Plugin update is Required
+
+Version 7.2.0 – 02 Jan 2024
+New
+
+GamiPress Plugin Supports, Now user can achieve rewards
+Update
+
+Woo Commerce latest version support.
+Fixed
+
+Minor Bugs
+Note: Plugin update is Required
+
+Version 7.0.0 – 7 Dec 2023
+Update
+
+Revised response mechanisms for improved performance.
+Updated Flutter packages.
+Fixed
+
+Minor UI issues and bugs
+Note: Socialv-api plugin update required
+
+Important: Prior to updating, please ensure to take a complete backup of your project due to significant breaking changes introduced in this update.
+
+Version 6.12.0 – 24 Nov 2023
+New
+
+Iframely Plugin Support
+Signup Fields Support in Users Profile Fields
+Search Blogs
+Migrate to Flutter 3.16
+Support for Android 14
+Update
+
+Flutter Packages
+Fixed
+
+Minor UI Bugs
+Note: Socialv-api plugin update required
+
+Version 6.10.2 – 16 Nov 2023
+Update
+
+Updated Flutter packages.
+Fixed
+
+Deep Link Issue
+Add PDF file in Post
+Version 6.10.0 – 09 Nov 2023
+New
+
+Audio Call and Video Call supported for WebSocket Version
+Fixed
+
+Minor Bug Fixes
+Note: Socialv-api plugin update required
+
+Version 6.9.0 – 19 Oct 2023
+Update
+
+Migrate OneSignal to 5.0.x
+Link preview in app with mentions
+Support for docx file in post
+Paragraph Formatting in Comments and Messages
+Support for macOS Sonoma and xcode 15 support
+Fixed
+
+Payment detail for membership with amount 0.
+Bug Fixes
+Note: Socialv-api plugin update required
+
+Version 6.8.0 – 06 Sep 2023
+New
+
+Paid Membership Pro(PMP) Integration
+Introduced in-app payments with Stripe and Razorpay
+Implemented adult content filter for posts, comments, and forums.
+WooCommerce latest version Support
+Flutter 3.13 Support
+Implemented Link Preview in Posts
+Update
+
+Updated Flutter packages.
+Changes in Model of User Settings in Chat
+Fixed
+
+Handling of deleted users in chat.
+User names in Group Messages
+Set Duration for Video Stories.
+Deletion of Video Stories
+Video Stories issue when story is changed
+Send Verification Request to User
+Minor Bug Fixes
+Note: Socialv-api plugin update required
+
+Version 6.5.0 – 26 July 2023
+New
+
+Introduced OTP Login
+Activation process for newly registered accounts with email
+Ability to search for posts
+Option to customize chat backgrounds
+Allowed blocking users in Chat Setting
+Users can now add Camera Videos to their stories.
+Update
+
+UI Enhancements
+Refactored Message Models to improve formatting
+Fixed
+
+Resolved issues related to displaying YouTube videos in posts and courses
+Problem of duplicate videos in video posts
+Issue of opening same screen from post
+Improved the performance of Send message and chat screens, along with the thread list.
+Updated the Comment count when adding or deleting comments in the post
+Minor bugs
+Note: Socialv-api plugin update required
+
+Version 6.2.1 – 11 July 2023
+Fixed
+
+Create Album issue fixed
+Note: Socialv-api plugin update required
+
+Version 6.2.0 – 03 July 2023
+New
+
+Protected Blog support
+Update/ Delete Blog comments
+Update
+
+Chat Improvements
+Fixed
+
+Video Story Issue
+Minor Fixes
+Note: Socialv-api plugin update required
+
+Version 6.1.0 – 27 June 2023
+New
+
+We have now implemented basic chat features without the need for BetterMessages paid plugin.
+Update
+
+Reactions Feature for Groups
+Reactions UI Enhancement
+Fixed
+
+WooCommerce Issue
+Note: Socialv-api plugin update not required
+
+Version 6.0.0 – 23 June 2023
+New
+
+Introducing Chat Compatibility with BetterMessages WebSocket Version
+We hope you enjoy using the updated chat system! Your feedback is valuable to us, so please don’t hesitate to share your thoughts and suggestions for further improvements.
+Note: Better Messages WebSocket Version is required
+
+Version 5.12.0 – 06 June 2023
+New
+
+Manage Invitations
+Blogs
+Manage One Signal Notification texts from Admin Dashboard
+LMS Orders
+App Configuration Options in Admin Dashboard
+Update
+
+Show Categories in Courses
+Multiple Mentions while Adding post
+Fixed
+
+Pin Post issue
+Video Player Fix
+Note: Socialv-api plugin update required
+
+Version 5.9.0 – 2 June 2023
+New
+
+Migrate to Flutter 3.10
+Note: Socialv-api plugin update required
+
+Version 5.8.0 – 9 May 2023
+New
+
+Added a gallery feature to share photos and videos.
+Added the ability to manage group invites.
+Added the ability to designate moderators to help manage groups.
+Added the ability to manage restricted group members.
+Fixed
+
+Pin Post Issue
+Note: Socialv-api plugin update required
+
+Version 5.5.0 – 20 April 2023
+New
+
+User can React on Post and Comments
+User can Mention others in their Posts
+Support for YouTube Videos and URL Links in Post Media
+Clear All Notifications
+Send Notifications On Share Post and Reactions
+User can Favorite Post
+User can Pin Post
+Group Suggestions
+Handle Notifications Event
+Update
+
+Now User can Undo Hide Post
+Support for images in Forums Topics and replies
+Show all members with suggestions
+Fixed
+
+User can remove coupons from cart in WooCommerce
+Bug Fixes in WooCommerce
+OneSignal permission for iOS
+Bug Fixes in UI
+Version 5.0.0 – 17 Mar 2023
+New
+
+Now users can learn courses on SocialV with our LearnPress
+Show users mentioned in post
+Update
+
+UI Enhancements
+Version 4.9.0 – 28 Feb 2023
+Fixed
+
+Media Post Upload issue
+Note: Socialv-api plugin update required
+
+Version 4.9.0 – 27 Feb 2023
+New
+
+Story Highlight Options (Trash, Draft, Permanent Delete)
+Update
+
+Showing Long Post Content
+Enable WooCommerce on Condition
+Fixed
+
+Showing dynamic Currency in Woocommerce
+Video Story Issue
+Bug Fixes
+Version 4.8.1 – 18 Jan 2023
+Update
+
+WooCommerce Latest Version Support
+Version 4.8.0 – 16 Jan 2023
+Version 9.1.0 – 04 Feb 2025
+New
+
+Now available for Shop, Membership, and Courses
+Easily make payments for LMS courses via PayPal
+Update
+
+Revamped UI for Stories & Highlight Stories
+Enhanced UI for the Cart Screen for a smoother checkout experience
+Fixed
+
+Post Comments
+Chat Wallpaper Flow
+Validation for Corrupt Media Files
+Coupon Expiry validation
+Topic Reply Flow
+Invite Users Layout for Group Creation
+URL support for Stories
+Other small bug fixes
+Note: Plugin update is required
+
+Version 9.0.4 – 21 Dec 2024
+New
+
+A cancel option has been added to the order screen
+Fixed
+
+Issue with the course order screen sales price has been resolved
+Include a suggested user list in the Search member component
+The highlight story screen is managed by flow to the my story screen
+The flow set for the album upload module
+Manage the blocked account list 
+The profile edit screen displays the option to disable the profile
+Control the back flow of the user story screen
+Other minor bug fixes
+Note: Plugin update is required
+
+Version 9.0.3 – 25 Nov 2024
+New
+
+Added validations in edit billing address
+Update
+
+Will pop scope migration
+Added support for JDK 21
+Fixed
+
+Shop filter issue
+Post comment edit reply issue
+Duplicate categories
+Course order price issue
+Duplicate stories issue
+Mute and Un-mute button issues on the chat module
+Notification count issue
+Image issue in the chat screen
+Duplicate story issue
+Other small bug fixes
+Version 9.0.0 – 08 Nov 2024 (Breaking Changes)
+Update
+
+Improved overall app performance for a smoother user experience
+Enhanced MobX state management implementation for better stability and efficiency
+Updated Activity UI for a more polished look and feel
+Gamipress rewards are now dynamically managed for a more flexible and engaging experience
+Fixed
+
+Resolved an issue preventing iOS app archive builds
+Fixed an issue where story time displayed incorrectly based on the timer
+Corrected an issue displaying inaccurate membership order details for free plans
+Fixed an issue where theme mode reverted when restarting the app
+Resolved an issue with social login that caused a continuous loading screen
+Adjusted spacing to improve RTL language support
+Fixed a type casting error that appeared for courses
+Resolved a profile field issue occurring while editing profiles
+Addressed other minor issues to improve app’s user interface, stability and performance
+Important Notes
+Backup: This update introduces major changes. Please ensure a backup of your existing data to prevent any loss.
+Plugin update required
+Version 8.0.2 – 25 Oct 2024 ( App Update ) 
+Update
+
+Update – Flutter 3.24.X Support
+Update: Android Studio Latest Version (LadyBug) Support
+Version 8.0.2 – 22 Oct 2024 ( Plugin Update ) 
+Update
+
+Updated outdated WooCommerce templates.
+Update – Compatible with BuddyPress latest version
+Fixed
+
+Fix – Escaption issue resolved
+Fix – Minor bugs
+Note: Only Plugin update is required
+
+Version 8.0.1 – 04 Sep 2024
+Update
+
+Migrated Firebase Messaging from legacy FCM APIs to HTTP v1
+Firebase Messaging migration steps are mentioned here – Enable Firebase Notification
+
+Note: Only Plugin update is required
+
+Version 8.0.0 – 11 July 2024
+New
+
+In-app purchases (IAPs) – Users can now buy subscriptions within the app
+Update
+
+Migrate to Flutter 3.22.x
+Performance improvements – Conducted API response optimization and code optimization in major modules like activity, forums, groups, settings, suggestions, moderation, gallery etc
+Libraries have been updated for compatibility
+Fixed
+
+Chat issue – Addressed an issue in chat caused by the Better Messages plugin update
+Important Notes
+Backup: This update includes significant changes based on API response optimization. Please back up your existing code before updating.
+In – App Purchase Configuration – here
+We’ve added firebase_options inside lib folder.
+Kindly configure it by following the steps mentioned in Flutter configuration 
+Plugin update required
+Version 7.3.0 – 20 Mar 2024
+New
+
+Firebase Push Notification and Removed OneSignal Notification
+Update
+
+Migrate to Flutter 3.19.x
+Libraries Update
+Note: Plugin update is Required
+
+Version 7.2.1 – 08 Jan 2024
+Update
+
+Libraries updated
+Fixed
+
+Resolved issue with earned badges
+Note: Plugin update is Required
+
+Version 7.2.0 – 02 Jan 2024
+New
+
+GamiPress Plugin Supports, Now user can achieve rewards
+Update
+
+Woo Commerce latest version support.
+Fixed
+
+Minor Bugs
+Note: Plugin update is Required
+
+Version 7.0.0 – 7 Dec 2023
+Update
+
+Revised response mechanisms for improved performance.
+Updated Flutter packages.
+Fixed
+
+Minor UI issues and bugs
+Note: Socialv-api plugin update required
+
+Important: Prior to updating, please ensure to take a complete backup of your project due to significant breaking changes introduced in this update.
+
+Version 6.12.0 – 24 Nov 2023
+New
+
+Iframely Plugin Support
+Signup Fields Support in Users Profile Fields
+Search Blogs
+Migrate to Flutter 3.16
+Support for Android 14
+Update
+
+Flutter Packages
+Fixed
+
+Minor UI Bugs
+Note: Socialv-api plugin update required
+
+Version 6.10.2 – 16 Nov 2023
+Update
+
+Updated Flutter packages.
+Fixed
+
+Deep Link Issue
+Add PDF file in Post
+Version 6.10.0 – 09 Nov 2023
+New
+
+Audio Call and Video Call supported for WebSocket Version
+Fixed
+
+Minor Bug Fixes
+Note: Socialv-api plugin update required
+
+Version 6.9.0 – 19 Oct 2023
+Update
+
+Migrate OneSignal to 5.0.x
+Link preview in app with mentions
+Support for docx file in post
+Paragraph Formatting in Comments and Messages
+Support for macOS Sonoma and xcode 15 support
+Fixed
+
+Payment detail for membership with amount 0.
+Bug Fixes
+Note: Socialv-api plugin update required
+
+Version 6.8.0 – 06 Sep 2023
+New
+
+Paid Membership Pro(PMP) Integration
+Introduced in-app payments with Stripe and Razorpay
+Implemented adult content filter for posts, comments, and forums.
+WooCommerce latest version Support
+Flutter 3.13 Support
+Implemented Link Preview in Posts
+Update
+
+Updated Flutter packages.
+Changes in Model of User Settings in Chat
+Fixed
+
+Handling of deleted users in chat.
+User names in Group Messages
+Set Duration for Video Stories.
+Deletion of Video Stories
+Video Stories issue when story is changed
+Send Verification Request to User
+Minor Bug Fixes
+Note: Socialv-api plugin update required
+
+Version 6.5.0 – 26 July 2023
+New
+
+Introduced OTP Login
+Activation process for newly registered accounts with email
+Ability to search for posts
+Option to customize chat backgrounds
+Allowed blocking users in Chat Setting
+Users can now add Camera Videos to their stories.
+Update
+
+UI Enhancements
+Refactored Message Models to improve formatting
+Fixed
+
+Resolved issues related to displaying YouTube videos in posts and courses
+Problem of duplicate videos in video posts
+Issue of opening same screen from post
+Improved the performance of Send message and chat screens, along with the thread list.
+Updated the Comment count when adding or deleting comments in the post
+Minor bugs
+Note: Socialv-api plugin update required
+
+Version 6.2.1 – 11 July 2023
+Fixed
+
+Create Album issue fixed
+Note: Socialv-api plugin update required
+
+Version 6.2.0 – 03 July 2023
+New
+
+Protected Blog support
+Update/ Delete Blog comments
+Update
+
+Chat Improvements
+Fixed
+
+Video Story Issue
+Minor Fixes
+Note: Socialv-api plugin update required
+
+Version 6.1.0 – 27 June 2023
+New
+
+We have now implemented basic chat features without the need for BetterMessages paid plugin.
+Update
+
+Reactions Feature for Groups
+Reactions UI Enhancement
+Fixed
+
+WooCommerce Issue
+Note: Socialv-api plugin update not required
+
+Version 6.0.0 – 23 June 2023
+New
+
+Introducing Chat Compatibility with BetterMessages WebSocket Version
+We hope you enjoy using the updated chat system! Your feedback is valuable to us, so please don’t hesitate to share your thoughts and suggestions for further improvements.
+Note: Better Messages WebSocket Version is required
+
+Version 5.12.0 – 06 June 2023
+New
+
+Manage Invitations
+Blogs
+Manage One Signal Notification texts from Admin Dashboard
+LMS Orders
+App Configuration Options in Admin Dashboard
+Update
+
+Show Categories in Courses
+Multiple Mentions while Adding post
+Fixed
+
+Pin Post issue
+Video Player Fix
+Note: Socialv-api plugin update required
+
+Version 5.9.0 – 2 June 2023
+New
+
+Migrate to Flutter 3.10
+Note: Socialv-api plugin update required
+
+Version 5.8.0 – 9 May 2023
+New
+
+Added a gallery feature to share photos and videos.
+Added the ability to manage group invites.
+Added the ability to designate moderators to help manage groups.
+Added the ability to manage restricted group members.
+Fixed
+
+Pin Post Issue
+Note: Socialv-api plugin update required
+
+Version 5.5.0 – 20 April 2023
+New
+
+User can React on Post and Comments
+User can Mention others in their Posts
+Support for YouTube Videos and URL Links in Post Media
+Clear All Notifications
+Send Notifications On Share Post and Reactions
+User can Favorite Post
+User can Pin Post
+Group Suggestions
+Handle Notifications Event
+Update
+
+Now User can Undo Hide Post
+Support for images in Forums Topics and replies
+Show all members with suggestions
+Fixed
+
+User can remove coupons from cart in WooCommerce
+Bug Fixes in WooCommerce
+OneSignal permission for iOS
+Bug Fixes in UI
+Version 5.0.0 – 17 Mar 2023
+New
+
+Now users can learn courses on SocialV with our LearnPress
+Show users mentioned in post
+Update
+
+UI Enhancements
+Version 4.9.0 – 28 Feb 2023
+Fixed
+
+Media Post Upload issue
+Note: Socialv-api plugin update required
+
+Version 4.9.0 – 27 Feb 2023
+New
+
+Story Highlight Options (Trash, Draft, Permanent Delete)
+Update
+
+Showing Long Post Content
+Enable WooCommerce on Condition
+Fixed
+
+Showing dynamic Currency in Woocommerce
+Video Story Issue
+Bug Fixes
+Version 4.8.1 – 18 Jan 2023
+Update
+
+WooCommerce Latest Version Support
+Version 4.8.0 – 16 Jan 2023
+Version 9.1.0 – 04 Feb 2025
+New
+
+Now available for Shop, Membership, and Courses
+Easily make payments for LMS courses via PayPal
+Update
+
+Revamped UI for Stories & Highlight Stories
+Enhanced UI for the Cart Screen for a smoother checkout experience
+Fixed
+
+Post Comments
+Chat Wallpaper Flow
+Validation for Corrupt Media Files
+Coupon Expiry validation
+Topic Reply Flow
+Invite Users Layout for Group Creation
+URL support for Stories
+Other small bug fixes
+Note: Plugin update is required
+
+Version 9.0.4 – 21 Dec 2024
+New
+
+A cancel option has been added to the order screen
+Fixed
+
+Issue with the course order screen sales price has been resolved
+Include a suggested user list in the Search member component
+The highlight story screen is managed by flow to the my story screen
+The flow set for the album upload module
+Manage the blocked account list 
+The profile edit screen displays the option to disable the profile
+Control the back flow of the user story screen
+Other minor bug fixes
+Note: Plugin update is required
+
+Version 9.0.3 – 25 Nov 2024
+New
+
+Added validations in edit billing address
+Update
+
+Will pop scope migration
+Added support for JDK 21
+Fixed
+
+Shop filter issue
+Post comment edit reply issue
+Duplicate categories
+Course order price issue
+Duplicate stories issue
+Mute and Un-mute button issues on the chat module
+Notification count issue
+Image issue in the chat screen
+Duplicate story issue
+Other small bug fixes
+Version 9.0.0 – 08 Nov 2024 (Breaking Changes)
+Update
+
+Improved overall app performance for a smoother user experience
+Enhanced MobX state management implementation for better stability and efficiency
+Updated Activity UI for a more polished look and feel
+Gamipress rewards are now dynamically managed for a more flexible and engaging experience
+Fixed
+
+Resolved an issue preventing iOS app archive builds
+Fixed an issue where story time displayed incorrectly based on the timer
+Corrected an issue displaying inaccurate membership order details for free plans
+Fixed an issue where theme mode reverted when restarting the app
+Resolved an issue with social login that caused a continuous loading screen
+Adjusted spacing to improve RTL language support
+Fixed a type casting error that appeared for courses
+Resolved a profile field issue occurring while editing profiles
+Addressed other minor issues to improve app’s user interface, stability and performance
+Important Notes
+Backup: This update introduces major changes. Please ensure a backup of your existing data to prevent any loss.
+Plugin update required
+Version 8.0.2 – 25 Oct 2024 ( App Update ) 
+Update
+
+Update – Flutter 3.24.X Support
+Update: Android Studio Latest Version (LadyBug) Support
+Version 8.0.2 – 22 Oct 2024 ( Plugin Update ) 
+Update
+
+Updated outdated WooCommerce templates.
+Update – Compatible with BuddyPress latest version
+Fixed
+
+Fix – Escaption issue resolved
+Fix – Minor bugs
+Note: Only Plugin update is required
+
+Version 8.0.1 – 04 Sep 2024
+Update
+
+Migrated Firebase Messaging from legacy FCM APIs to HTTP v1
+Firebase Messaging migration steps are mentioned here – Enable Firebase Notification
+
+Note: Only Plugin update is required
+
+Version 8.0.0 – 11 July 2024
+New
+
+In-app purchases (IAPs) – Users can now buy subscriptions within the app
+Update
+
+Migrate to Flutter 3.22.x
+Performance improvements – Conducted API response optimization and code optimization in major modules like activity, forums, groups, settings, suggestions, moderation, gallery etc
+Libraries have been updated for compatibility
+Fixed
+
+Chat issue – Addressed an issue in chat caused by the Better Messages plugin update
+Important Notes
+Backup: This update includes significant changes based on API response optimization. Please back up your existing code before updating.
+In – App Purchase Configuration – here
+We’ve added firebase_options inside lib folder.
+Kindly configure it by following the steps mentioned in Flutter configuration 
+Plugin update required
+Version 7.3.0 – 20 Mar 2024
+New
+
+Firebase Push Notification and Removed OneSignal Notification
+Update
+
+Migrate to Flutter 3.19.x
+Libraries Update
+Note: Plugin update is Required
+
+Version 7.2.1 – 08 Jan 2024
+Update
+
+Libraries updated
+Fixed
+
+Resolved issue with earned badges
+Note: Plugin update is Required
+
+Version 7.2.0 – 02 Jan 2024
+New
+
+GamiPress Plugin Supports, Now user can achieve rewards
+Update
+
+Woo Commerce latest version support.
+Fixed
+
+Minor Bugs
+Note: Plugin update is Required
+
+Version 7.0.0 – 7 Dec 2023
+Update
+
+Revised response mechanisms for improved performance.
+Updated Flutter packages.
+Fixed
+
+Minor UI issues and bugs
+Note: Socialv-api plugin update required
+
+Important: Prior to updating, please ensure to take a complete backup of your project due to significant breaking changes introduced in this update.
+
+Version 6.12.0 – 24 Nov 2023
+New
+
+Iframely Plugin Support
+Signup Fields Support in Users Profile Fields
+Search Blogs
+Migrate to Flutter 3.16
+Support for Android 14
+Update
+
+Flutter Packages
+Fixed
+
+Minor UI Bugs
+Note: Socialv-api plugin update required
+
+Version 6.10.2 – 16 Nov 2023
+Update
+
+Updated Flutter packages.
+Fixed
+
+Deep Link Issue
+Add PDF file in Post
+Version 6.10.0 – 09 Nov 2023
+New
+
+Audio Call and Video Call supported for WebSocket Version
+Fixed
+
+Minor Bug Fixes
+Note: Socialv-api plugin update required
+
+Version 6.9.0 – 19 Oct 2023
+Update
+
+Migrate OneSignal to 5.0.x
+Link preview in app with mentions
+Support for docx file in post
+Paragraph Formatting in Comments and Messages
+Support for macOS Sonoma and xcode 15 support
+Fixed
+
+Payment detail for membership with amount 0.
+Bug Fixes
+Note: Socialv-api plugin update required
+
+Version 6.8.0 – 06 Sep 2023
+New
+
+Paid Membership Pro(PMP) Integration
+Introduced in-app payments with Stripe and Razorpay
+Implemented adult content filter for posts, comments, and forums.
+WooCommerce latest version Support
+Flutter 3.13 Support
+Implemented Link Preview in Posts
+Update
+
+Updated Flutter packages.
+Changes in Model of User Settings in Chat
+Fixed
+
+Handling of deleted users in chat.
+User names in Group Messages
+Set Duration for Video Stories.
+Deletion of Video Stories
+Video Stories issue when story is changed
+Send Verification Request to User
+Minor Bug Fixes
+Note: Socialv-api plugin update required
+
+Version 6.5.0 – 26 July 2023
+New
+
+Introduced OTP Login
+Activation process for newly registered accounts with email
+Ability to search for posts
+Option to customize chat backgrounds
+Allowed blocking users in Chat Setting
+Users can now add Camera Videos to their stories.
+Update
+
+UI Enhancements
+Refactored Message Models to improve formatting
+Fixed
+
+Resolved issues related to displaying YouTube videos in posts and courses
+Problem of duplicate videos in video posts
+Issue of opening same screen from post
+Improved the performance of Send message and chat screens, along with the thread list.
+Updated the Comment count when adding or deleting comments in the post
+Minor bugs
+Note: Socialv-api plugin update required
+
+Version 6.2.1 – 11 July 2023
+Fixed
+
+Create Album issue fixed
+Note: Socialv-api plugin update required
+
+Version 6.2.0 – 03 July 2023
+New
+
+Protected Blog support
+Update/ Delete Blog comments
+Update
+
+Chat Improvements
+Fixed
+
+Video Story Issue
+Minor Fixes
+Note: Socialv-api plugin update required
+
+Version 6.1.0 – 27 June 2023
+New
+
+We have now implemented basic chat features without the need for BetterMessages paid plugin.
+Update
+
+Reactions Feature for Groups
+Reactions UI Enhancement
+Fixed
+
+WooCommerce Issue
+Note: Socialv-api plugin update not required
+
+Version 6.0.0 – 23 June 2023
+New
+
+Introducing Chat Compatibility with BetterMessages WebSocket Version
+We hope you enjoy using the updated chat system! Your feedback is valuable to us, so please don’t hesitate to share your thoughts and suggestions for further improvements.
+Note: Better Messages WebSocket Version is required
+
+Version 5.12.0 – 06 June 2023
+New
+
+Manage Invitations
+Blogs
+Manage One Signal Notification texts from Admin Dashboard
+LMS Orders
+App Configuration Options in Admin Dashboard
+Update
+
+Show Categories in Courses
+Multiple Mentions while Adding post
+Fixed
+
+Pin Post issue
+Video Player Fix
+Note: Socialv-api plugin update required
+
+Version 5.9.0 – 2 June 2023
+New
+
+Migrate to Flutter 3.10
+Note: Socialv-api plugin update required
+
+Version 5.8.0 – 9 May 2023
+New
+
+Added a gallery feature to share photos and videos.
+Added the ability to manage group invites.
+Added the ability to designate moderators to help manage groups.
+Added the ability to manage restricted group members.
+Fixed
+
+Pin Post Issue
+Note: Socialv-api plugin update required
+
+Version 5.5.0 – 20 April 2023
+New
+
+User can React on Post and Comments
+User can Mention others in their Posts
+Support for YouTube Videos and URL Links in Post Media
+Clear All Notifications
+Send Notifications On Share Post and Reactions
+User can Favorite Post
+User can Pin Post
+Group Suggestions
+Handle Notifications Event
+Update
+
+Now User can Undo Hide Post
+Support for images in Forums Topics and replies
+Show all members with suggestions
+Fixed
+
+User can remove coupons from cart in WooCommerce
+Bug Fixes in WooCommerce
+OneSignal permission for iOS
+Bug Fixes in UI
+Version 5.0.0 – 17 Mar 2023
+New
+
+Now users can learn courses on SocialV with our LearnPress
+Show users mentioned in post
+Update
+
+UI Enhancements
+Version 4.9.0 – 28 Feb 2023
+Fixed
+
+Media Post Upload issue
+Note: Socialv-api plugin update required
+
+Version 4.9.0 – 27 Feb 2023
+New
+
+Story Highlight Options (Trash, Draft, Permanent Delete)
+Update
+
+Showing Long Post Content
+Enable WooCommerce on Condition
+Fixed
+
+Showing dynamic Currency in Woocommerce
+Video Story Issue
+Bug Fixes
+Version 4.8.1 – 18 Jan 2023
+Update
+
+WooCommerce Latest Version Support
+Version 4.8.0 – 16 Jan 2023
+                    </div>
+                    <!-- Next/Previous Buttons -->
+                    <div class="doc-navigation">
+                        <button class="prev-article" disabled>Previous Article</button>
+                        <button class="next-article">Next Article</button>
+                    </div>
+                    <div class="ticket-content">
+                        <h3 class="section-title">Still no luck? We can help You!</h3>
+                        <p class="section-desc">Contact us and we’ll get back to you as soon as possible.</p>
+                    </div>
+                    <div class="submit-ticket"><a rel="nofollow" target="_blank" href="">Submit a Request</a></div>
+                </main>
+        
+                <!-- Right Sidebar (On This Page) -->
+                <aside class="doc-right-sidebar">
+                    <div class="on-this-page">
+                        <h3>On This Page</h3>
+                        <ul>
+                            <!-- Dynamically populated by JavaScript -->
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="social-list">
+
+            <li class="social-item">
+              <a target="_blank"href="https://github.com/naddyjr" class="socials-item">
+                <img src="https://portifolio.somnest.net/assets/images/socials/github.png">
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a target="_blank"href="https://www.linkedin.com/in/somnest-web-and-app-developer-989944231" class="socials-item">
+                <img src="https://portifolio.somnest.net/assets/images/socials/linkedin.png">
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a target="_blank"href="https://www.instagram.com/amad_de_honest/" class="socials-item">
+                <img src="https://portifolio.somnest.net/assets/images/socials/instagram.png">
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a target="_blank"href="https://twitter.com/ayub_mcln" class="socials-item">
+                <img src="https://portifolio.somnest.net/assets/images/socials/twitter.png">
+              </a>
+            </li>
+
+          </ul>
+        <p>&copy; 2025 Somnest. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
